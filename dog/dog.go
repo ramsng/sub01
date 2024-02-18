@@ -2,7 +2,8 @@ package dog
 
 import "fmt"
 
-func Years(a int) int {
+func Years(a *int) int {
 	fmt.Println("Code in Dog Package")
-	return a * 7
+	b := *a
+	return b * 7
 }
